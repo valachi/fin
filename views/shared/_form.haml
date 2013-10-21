@@ -1,0 +1,26 @@
+%form{action: '/contacts', method: 'POST'}
+  #top_form
+    .field
+      %label{for: 'name'} Ваше ФИО*
+      %input{type: 'text', name: 'message[name]', placeholder: 'Ваше имя', required: true}
+    .field
+      %label{for: 'email'} Ваш email
+      %input{type: 'email', name: 'message[email]', placeholder: 'ya@yandex.ru'}
+    .field
+      %label{for: 'tel'} Ваш телефон*
+      %input{type: 'tel', name: 'message[tel]', placeholder: '89045883333', required: true}
+    .field
+      %label{for: 'serv'} Услуга
+      %input{type: 'text', name: 'message[serv]', placeholder: 'Перевозка'}
+    .field
+      %label{for: 'site', style: 'display: none;'} Сайт*
+      %input{type: 'hidden', name: 'message[site]', placeholder: 'Перевозка'}
+  #bottom_form
+    .field
+      %label{for: 'extra_info'} Ваше сообщение*
+      %textarea{name: 'message[extra_info]', placeholder: 'Звонить с 9 до 21 вечера', required: true}
+    .form_button
+      %input{type: 'submit', value: 'Отправить'}
+
+
+
