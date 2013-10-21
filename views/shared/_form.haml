@@ -1,4 +1,4 @@
-%form{action: '/contacts', method: 'POST'}
+%form{action: '#', method: 'POST'}
   #top_form
     .field
       %label{for: 'name'} Ваше ФИО*
@@ -11,10 +11,10 @@
       %input{type: 'tel', name: 'message[tel]', placeholder: '89045883333', required: true}
     .field
       %label{for: 'serv'} Услуга
-      %input{type: 'text', name: 'message[serv]', placeholder: 'Перевозка'}
+      %input{type: 'text', name: 'message[serv]', placeholder: ''}
     .field
       %label{for: 'site', style: 'display: none;'} Сайт*
-      %input{type: 'hidden', name: 'message[site]', placeholder: 'Перевозка'}
+      %input{type: 'hidden', name: 'message[site]', placeholder: ''}
   #bottom_form
     .field
       %label{for: 'extra_info'} Ваше сообщение*

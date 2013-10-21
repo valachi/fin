@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title= @title || "Аренда манипуляторов в Петербурге"
+    %title Аренда коттеджей в финляндии
     %link{rel: 'stylesheet', href: '/stylesheets/styles.css'}
     %link{rel: 'stylesheet', href: '/stylesheets/prettyPhoto.css'}
 
@@ -13,34 +13,26 @@
     #container
       .holder
         #header
-          #swf_truck
-          = haml :'shared/_swf'
-          #teaser
-            %p
-              Аренда манипулятора – это транспортировка грузов на любые расстояния в пределах Санкт-Петербурга и Северо-Запада, а также их быстрая и абсолютно безопасная погрузка и разгрузка. Длинный борт, груз до
-              %strong 11м.
-              Грузоподъемность
-              %strong 14т.
+          / #teaser
+          /   %p
+          /     Аренда коттеджей в Финляндии
 
         #left_column
           %ul
             %li
-              %a{href: '/'} Главная
+              %a{href: '#'} Главная
             %li
-              %a{href: '/prices'} Цены
+              %a{href: '#'} Цены
             / %li
             /   %a{href: '/services'} Услуги
             / %li
             /   %a{href: '/info'} Информация
             %li
-              %a{href: '/faq'} Вопрос ответ
+              %a{href: '#'} Вопрос ответ
             %li
-              %a{href: '/gallery'} Фотогалерея
+              %a{href: '#'} Фотогалерея
             %li
-              %a{href: '/contacts'} Контакты
-
-          %img{src: "/images/ban-m6.jpg", title: "Аренда гидроманипулятора", alt: "Аренда гидроманипулятора"}
-          %img{src: "/images/ban-m7.jpg", title: "Аренда гидроманипулятора", alt: "Аренда гидроманипулятора"}
+              %a{href: '#'} Контакты
 
         #center_column
           = yield
