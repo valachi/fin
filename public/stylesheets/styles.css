@@ -1,16 +1,20 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: repeat url('/images/background-tile.jpg');
+}
 
 .holder {
   width: 980px;
   margin: 0 auto;
-  border: 1px solid black; }
+  border: 1px solid black;
+  background: white;
+}
 
 #header {
   background: url("/images/anso-1.jpg");
   width: 980px;
-  height: 270px;
+  height: 250px;
   position: relative;
   margin-bottom: 10px; }
 
@@ -40,62 +44,66 @@ body {
   width: 204px;
   margin: 0 25px 0 30px; }
 
-#left_column ul {
+#menu {
+  width: 900px;
+  margin: 0 0 25px 25px;
+  text-align: center;
+}
+
+#menu ul {
   list-style-type: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin: 15px 15px;
+}
 
-#left_column ul li {
-  background: url("/images/menu.jpg");
-  width: 180px;
-  height: 25px;
-  margin-bottom: 3px;
-  padding: 2px 0 0 24px; }
+#menu ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
 
-#left_column ul li a {
+#menu ul li a {
   color: #1d5870;
   font-size: 14px;
   text-decoration: none;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-#left_column img {
-  margin-top: 15px; }
-
-#center_column {
+#right_column {
   float: left;
-  width: 450px;
+  width: 695px;
   height: 100%;
   background-image: url("/images/orange-line.png");
-  background-position: top center;
   background-repeat: no-repeat; }
 
-#center_column h1 {
+#right_column h1 {
   font-size: 17px;
   color: #d76503;
   margin: 26px 0 0 0; }
 
-#center_column h2 {
+#right_column h2 {
   font-size: 14px;
   color: #d76503; }
 
-#center_column p {
+#right_column p {
   font-size: 14px;
   color: #434343;
   font-family: Tahoma; }
 
-#center_column ul li {
+#right_column ul li {
   font-size: 13px;
   color: #434343;
   font-family: Tahoma; }
 
-#right_column {
+#left_column {
   float: left;
   width: 226px;
   height: 361px;
   margin-left: 25px;
   text-align: center; }
 
-#right_column p.form_header {
+#left_column p.form_header {
   background: url("/images/forma-1.jpg") repeat scroll 0 0 transparent;
   padding-top: 6px;
   margin: 0;

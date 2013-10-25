@@ -16,29 +16,29 @@
           / #teaser
           /   %p
           /     Аренда коттеджей в Финляндии
-
-        #left_column
+        #menu
           %ul
             %li
               %a{href: '#'} Главная
             %li
-              %a{href: '#'} Цены
-            / %li
-            /   %a{href: '/services'} Услуги
-            / %li
-            /   %a{href: '/info'} Информация
+              %a{href: '#'} Размещение
             %li
-              %a{href: '#'} Вопрос ответ
+              %a{href: '#'} Услуги
+            %li
+              %a{href: '#'} Как нас найти
+            %li
+              %a{href: '#'} Бронирование
             %li
               %a{href: '#'} Фотогалерея
-            %li
-              %a{href: '#'} Контакты
 
-        #center_column
-          = yield
-        #right_column
+        #left_column
+
           %p.form_header Форма заказа
           = haml :'shared/_form'
+
+        #right_column
+          = yield
+
         #clear
         #footer
           #gears
@@ -49,8 +49,6 @@
           #counter
             = erb :'shared/_li_metrika'
             %br
-            #seovita
-              %a{href: 'http://seovita.ru'} Создание и продвижение сайта: SEOVITA.ru', ''
 
 
 %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", type: 'text/javascript'}
